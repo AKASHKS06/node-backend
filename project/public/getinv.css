@@ -3,14 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  font-weight: light !important;
 }
 
 body {
   min-height: 100vh;
   width: 100%;
   font-size: 16px;
-  
+
   /* color: #d58585;
     /*display: flex;
     justify-content: center;
@@ -25,131 +24,26 @@ body {
   flex-wrap: wrap;
 }
 */
-.inv {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+
+html {
+  scroll-behavior: smooth;
 }
 
-.invitem {
-  flex: 0 0 auto;
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
-.invitem {
-  position: relative;
-  margin: 30px;
-  width: 320px;
-  height: 570px;
-  overflow: hidden;
-  background-color: #b37575;
-  box-shadow: 0 0 10px 5px rosybrown;
-  border-radius: 5px;
-  cursor: pointer;
+#section1 .fadein {
+  font-size: 30px;
+  animation: fade-in-left 5s infinite alternate;
 }
 
-.invitemcont,
-.bodycont {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.invitemcont img {
-  justify-content: center;
-  width: 80%;
-  height: 40;
-  margin-left: 10%;
-  margin-top: 25%;
-  /*margin-bottom:5%;*/
-}
-
-.bodycont {
-  position: relative;
-}
-
-.overlay {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  background-color: #b37575;
-  opacity: 0;
-  transition: height linear 0.4s, opacity linear 0.2s;
-}
-
-.invitem:hover .overlay {
-  opacity: 1;
-  height: 150px;
-}
-
-.info {
-  background-color: #b37575;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 8px;
-}
-
-.ind-title {
-  color: black;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-  font-size: 1.5em;
-  letter-spacing: 1px;
-  margin: 12px;
-}
-
-.info {
-  letter-spacing: 0.5px;
-  margin-bottom: 6px;
-  border-top: 1px solid black;
-  margin-top: 12px;
-  padding: 28px;
-  padding-bottom: 0;
-}
-
-.seperator {
-  width: 20%;
-  height: 6px;
-  background-color: #b06d6d;
-  margin-bottom: 16px;
-}
-
-.moreinf {
-  font-size: 0.9em;
-  margin-bottom: 20px;
-  text-align: center;
-  color: black;
-}
-
-.inddonate {
-  color: #381919;
-  border: 3px solid #381919ent;
-  position: absolute;
-  top: -100px;
-  left: 155px;
-  transform: translateX(-50%);
-  width: 60%;
-  outline: none;
-  cursor: pointer;
-  padding: 12px;
-  text-transform: uppercase;
-  font-size: 1.3em;
-  font-weight: bold;
-  letter-spacing: 2px;
-  transition: background-color 0.4s, top 0.4s;
-}
-
-.invitem:hover .inddonate {
-  top: 50px;
-}
-
-.inddonate:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-
-}
 #section1 .sec1 {
   display: flex;
   text-align: center;
@@ -175,25 +69,9 @@ body {
   text-align: justify;
   margin-top: 2em;
   color: black;
-  font-weight: bolder;
+  font-weight: lighter;
   padding-right: 5%;
   line-height: 2.25em;
-}
-.afttext{
-  font-weight: normal !important;
-}
-html {
-  scroll-behavior: smooth;
-}
-
-@keyframes fade-in-left {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 #section1 .fadein {
@@ -225,7 +103,7 @@ html {
   text-align: justify;
   margin-top: 2em;
   color: black;
-  font-weight: bolder;
+  font-weight: lighter;
   padding-right: 5%;
   line-height: 2.25em;
 }
@@ -261,7 +139,77 @@ html {
   text-align: justify;
   margin-top: 2em;
   color: black;
-  font-weight: bolder;
+  font-weight: lighter;
+  padding-right: 5%;
+  line-height: 2.25em;
+}
+
+#section3 .fadein {
+  animation: fade-in-left 5s infinite alternate;
+}
+
+#section2 .sec1 {
+  display: flex;
+  text-align: center;
+}
+
+#section2 h2 {
+  color: #381919;
+  box-sizing: border-box;
+  margin-right: 4em;
+  padding-right: 5%;
+  padding-left: 3%;
+  padding-bottom: 5%;
+  font-size: 2rem;
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  line-height: 1.5em;
+}
+
+#section2 p {
+  text-align: justify;
+  margin-top: 2em;
+  color: black;
+  font-weight: lighter;
+  padding-right: 5%;
+  line-height: 2.25em;
+}
+
+#section2 .fadein {
+  animation: fade-in-left 5s infinite alternate;
+}
+
+
+#section3 .sec1 {
+  display: flex;
+  text-align: center;
+}
+
+#section3 h2 {
+  color: #381919;
+  box-sizing: border-box;
+  margin-right: 4em;
+  padding-right: 2%;
+  padding-left: 3%;
+  padding-bottom: 5%;
+  font-size: 2rem;
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  line-height: 1.5em;
+  width: 36%;
+}
+
+#section3 p {
+  text-align: justify;
+  margin-top: 2em;
+  color: black;
+  font-weight: lighter;
   padding-right: 5%;
   line-height: 2.25em;
 }
@@ -292,7 +240,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  display: block;
+  /*display: block;*/
   width: 100%;
   height: 100%;
   background-color: peachpuff;
@@ -341,7 +289,7 @@ html {
 }
 
 #page-header h2 {
-  font-weight: bold;
+  font-weight: lighter;
   color: rgba(160, 76, 27, 0.952);
   text-align: center;
 }
@@ -387,8 +335,6 @@ html {
   left: 0;
   background-color: peachpuff;
   overflow: scroll;
-
-
 }
 
 .overlayFade h3 {
@@ -473,11 +419,82 @@ html {
   height: 100%;
   width: 100%;
 }
-.partners img{
+
+.partners img {
   width: 14%;
   height: 150px;
 }
-.partners img:hover{
+
+.partners img:hover {
   box-shadow: 5px 5px 5px #d7d5d5;
   cursor: pointer;
+}
+
+/*contribute boxes thingy*/
+.image1 {
+  display: cover;
+  position: relative;
+  width: 100%;
+}
+
+.image1__img {
+  display: block;
+  width: 100%;
+  height: 370px;
+
+}
+
+.image1__overlay {
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: 'Barlow', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.image1__overlay:hover {
+  opacity: 1;
+}
+
+.image1__overlay>* {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image1__overlay:hover>* {
+  transform: translateY(0);
+}
+
+.image1__title {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.image1__description {
+  color: #fff;
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
+
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
 }
