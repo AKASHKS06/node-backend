@@ -11,7 +11,8 @@ app.listen(3000);
 app.set('view engine', 'ejs');
 
 // middleware & static files
-app.use(express.static('public'));
+app.use(morgan('dev')); // Morgan for logging
+app.use(express.static('public')); // Serving static files
 app.use((req, res, next) => {
   res.locals.path = req.path;
   next();

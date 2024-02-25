@@ -76,7 +76,7 @@ html {
   margin-top: 2em;
   font-weight: bolder;
   padding: 20px;
-  margin-right: 40px;
+  padding-right: 120px;
   line-height: 2.25em;
 }
 
@@ -97,15 +97,17 @@ html {
   color: rgba(160, 76, 27, 0.952);
   text-align: center;
 }
-.circle 
-{
-  border-radius: 400px;
+
+.circle {
+  border-radius: 120px;
 }
+
 *::-webkit-scrollbar {
   display: none;
   /*to remove scrollbar*/
 }
-.img-fluid{
-  width:50%;
-  height:50%;
+
+.img-fluid {
+  width: 50%;
+  height: 50%;
 }

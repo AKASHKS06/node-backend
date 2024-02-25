@@ -40,7 +40,7 @@ div {
   background-position: center;
   background-size: cover;
   background-image: url(img/home/home1.jpg);
-  
+
 }*/
 /*Newsletter*/
 #newsletter{
@@ -206,7 +206,6 @@ body {
 }
 #navbar li a:hover,
 #navbar li a.active{
-  font-weight: normal;
   color: brown;
 }
 #navbar li a.active::after,
@@ -250,6 +249,7 @@ body {
   font-size: 15px;
   background-repeat: no-repeat;   
 }
+
 /*#feature{
   display:flex;
   align-items:center;
@@ -298,7 +298,7 @@ body {
   flex: none;
 }
 .gallery div img{
-  width: 40%; height: 65%;
+  width: 40%; height: 70%;
   transition: transform 0.5s;
 }
 .gallery::-webkit-scrollbar{
@@ -308,10 +308,44 @@ body {
   cursor: pointer;
   transform: scale(1.1);
 }
-/*ReadMore button*/
-#mission button:hover{
+/*GetToKnowUs button*/
+#read:hover{
   background: saddlebrown;
   color: #fff;
+}
+.read{
+  position: absolute;
+  bottom:10%;
+  right:18%;
+  align-items: center;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+#hero{
+  background-attachment: fixed; 
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+#mission{
+  font-family: 'E A Garamond';
+  text-align: center; 
+  background-color: #fbe0d7;
+}
+#mission p{
+  top:10%;
+}
+
+.over{
+  position: absolute;
+  top: 22%;
+  align-content: center;
+  width: 88%;
+}
+.over img{
+width: 500px;
+height: 400px;
 }
 
 .counter-section{
@@ -335,8 +369,22 @@ body {
       left: 0;
       right: 0;*/
   }
+
 .image{
-  position: relative;
+  width: 300px;
+}
+.goal_img{
+  border-radius: 4px; 
+  width:100%; 
+  height: 70%;
+}
+.wrapper h1{
+  font-size: 35px;
+}
+.wrapper p{
+  font-size: 15px;
+  text-align: justify;
+  
 }
 .wrapper ul{
   justify-content: center;
@@ -344,9 +392,6 @@ body {
   list-style: none;
   display: flex;
 }
-/*.wrapper .content{
-  position: absolute;
-}*/
 .wrapper ul li:hover{
   background-color: transparent;
   background: #d8cbc4;
@@ -354,79 +399,13 @@ body {
   box-shadow:20px 20px 10px #bca89f;
   cursor: pointer;
 }
-
-/*.wrapper .content:hover{
-  opacity: 1;
-  transform:translateY(25px) ;
-  transition: transsform 0.6s;
-}*/
-
-/*ul {
-    display: flex;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-  list-style: none;
-  padding: 0 20px;
-  position: relative;
-}*/
-
-.image{
-  display: cover;
-  position: relative;
-  width: 100%;
-}
-.image__img{
-  display: block;
-  width: 100%;
-  height: 370px;
-  
-}
-.image__overlay{
-  padding: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  color: #ffffff;
-  font-family: 'Barlow', sans-serif;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.25s;
-}
-.image__overlay:hover{
-  opacity: 1;
-}
-.image__overlay > *{
-  transform: translateY(20px);
-  transition: transform 0.25s;
-}
-.image__overlay:hover > *{
-  transform: translateY(0);
-}
-.image__title{
-  font-size: 2em;
-  font-weight: bold;
-}
-.image__description{
-  color: #fff;
-  font-size: 1.25em;
-  margin-top: 0.25em;
-}
-
 /* Shop page */
 #page-header {
-  background-image: url("img/project/DiffAbleBanner-canva.jpg.png");
+  background-image: url("Project1.png");
   width: 100%;
   height: 40vh;
+  background-position: absolute;
+  top: -10%;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -440,6 +419,7 @@ body {
 }
 #product1{
   text-align:center;
+  padding: 40px;
 }
 #product1 .pro-container{
   display:flex;
@@ -533,14 +513,6 @@ body {
   font-weight: 600;
 }*/
 
-/*our partners*/
-.partners img{
-  width: 14%;
-  height: 150px;
-}
-.partners img:hover{
-  box-shadow: 5px 5px 5px #d7d5d5;
-  cursor: pointer;
-}
+
 
 /*get involved*/
